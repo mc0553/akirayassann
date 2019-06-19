@@ -1,0 +1,152 @@
+body{
+    width: 1281px;
+
+    margin: 0;
+    font-family: "游ゴシック体", 'Yu Gothic', "遊ゴシック体", YuGothic, sans-serif;
+}
+
+.logo{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    margin-left: 50px;
+}
+
+.navmenu ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navmenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.navmenu ul li{
+    margin: 40px 50px 30px 0;
+    overflow: hidden;
+    
+    text-align: center;
+}
+
+.navmenu li {
+    font-size: 14px;
+
+}
+
+
+
+header{
+    text-align: center;
+    
+}
+
+.slidePic{
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+    width: 1024px;
+    height:448;
+}
+
+.slider p{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 24px;
+}
+
+.textPic{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-bottom: 49px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+#gallery{
+    margin-top: 80px;
+}
+
+
+.box-list{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .box-list li{
+    float: left;
+    margin: 35px 15px 40px 15px;
+    width: 320px;
+    height: 402px;
+    position: relative;
+  }
+
+  .box-list p{
+      padding: 10px;
+      font-size: 16px;
+  }
+
+    .box-list a{
+      font-size: 12px;
+      position: absolute;
+      color: black;
+      text-decoration: none;
+      right: 0;
+      bottom: 0;
+      margin: 30px;
+     }
+
+  
+
+  .box-list a::after{
+    content: '';
+    display: block;
+    background: black;
+    height: 1px;
+    width: 20px;
+    margin-top: 10px;
+    right: 0;
+    position: absolute;
+    
+  }
+
+.box-list li:hover{
+    box-shadow: 0px 3px 15px gray;
+}
+
+.box-list a:hover:after{
+      width: 100%;
+
+  }
+
+footer{
+    background-color: black;
+    height: 128px;
+    width: 100%;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+footer p{
+    position: absolute;
+    color: white;
+    width: 362px;
+    font-size: 16px;
+}
