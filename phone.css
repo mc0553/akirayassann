@@ -1,0 +1,146 @@
+@media screen and (max-width: 767px) {
+
+    #body{
+        max-width: 100%;
+    }
+
+    header{
+        position: fixed;
+        margin-top: 0;
+        top: 0px;
+        width: 100%;
+        height: 278px;
+        justify-content: center;
+        align-items: flex-start;;
+        z-index: 900;
+    }
+
+    /* ここからトップロゴ */
+    .left-top{
+        position: static;
+        width: 216px;
+        height: 216px;
+        margin: 31px 0;
+        z-index: 1000;
+    }
+    .left-maxwi{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* ここまでトップロゴ */
+
+    /* ここから降ってくるメニュー */
+    .right-menu{
+        width: 100%;
+        position: relative;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 0;
+        width: 100%;
+        top: 278px;
+    }
+    .right-menu ul li {
+        font-size: 18px;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        font-weight: bold;
+        margin: 0;
+        line-height: 80px;
+        text-align: center;
+        background-color: aliceblue;
+        
+    }
+    /* ここまで降ってくるメニュー */
+
+    /* ここからハンバーガー作成 */
+
+    .hamburger {
+        width: 56px;
+        height: 46px;
+        margin: 30px 5px 0 auto;
+        border-radius: 18px;
+        padding: 6px 6px 6px 10px;
+        cursor: pointer;
+    }
+
+    .hamburger:hover {
+        background-color: aliceblue;
+        border-radius: 18px;
+    }
+    
+    .hamburger span {
+      position: relative;
+      display: block;
+      top: 8px;
+    }
+    
+    .hamburger span:after, 
+    .hamburger span:before {
+      content: "";
+      position: absolute;
+    }
+
+    .hamburger span:before {
+      top: 12px;
+    }
+    
+    .hamburger span:after {
+      top: 24px;
+    }
+     
+    .hamburger span, 
+    .hamburger span:before, 
+    .hamburger span:after {
+      width: 100%;
+      height: 5px;
+      background-color: #ddd;
+      transition: all 0.5s ease;
+      border-radius: 2px;
+    }
+    /* ここまでがハンバーガー */
+
+    /* ハンバーガーメニューをバツに変更するコード */
+    /* クリック動作はJSで指示 */
+    /* 真ん中の棒を透明にする */
+    /* .hamburger:hover span:before { background-color: transparent; }
+    .hamburger:hover span { transform: rotate(45deg) translate(7px, 9px); }
+    .hamburger:hover span:after { transform: rotate(-90deg) translate( 24px, 0px); }
+     */
+    /* ハンバーガーボタンここまで */
+    
+    /* right-bottomロゴ消す */
+    .right-bottom{ display: none; }
+ 
+    .swiper-slide img{
+        max-width: 100%;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .font{ font-size: 0;
+        text-align: center;
+        line-height: 40px;
+    }
+    .font::before{
+        content: "進化し続ける「街」";
+        font-size: 32px;
+    }
+
+    .font2{ font-size: 0;
+        text-align: center;
+        line-height: 40px;
+    }
+    .font2::before{
+        content: "アメリカンビレッジマガジン";
+        font-size: 32px;
+        font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+        font-weight: 500;
+    }
+    h2{
+        font-size: 60px;
+    }
+
+}

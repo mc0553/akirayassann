@@ -1,8 +1,11 @@
 body{
     width: 100%;
-
     margin: 0 auto;
     font-family: "游ゴシック体", 'Yu Gothic', "遊ゴシック体", YuGothic, sans-serif;
+}
+
+header{
+    text-align: center;
 }
 
 .logo{
@@ -25,44 +28,48 @@ body{
 .navmenu ul li{
     margin: 40px 50px 30px 0;
     overflow: hidden;
-    
     text-align: center;
 }
 
 .navmenu li {
     font-size: 14px;
-
 }
 
-
-
-header{
-    text-align: center;
+.slider{
+    position: relative;
+    
     
 }
 
-.slidePic{
-    margin-top: 20px;
-    position: relative;
-    z-index: 1;
+
+
+.slideshow img{
     width: 1024px;
-    height:448;
+    height: auto;    
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
 }
 
-.slider p{
+
+
+
+header p{
     text-align: left;
     margin-top: 20px;
     margin-left: 30px;
     font-size: 24px;
 }
 
-.textPic{
+.aboveImg{
     position: absolute;
     z-index: 2;
-    bottom: 0;
-    right: 0;
-  
+    right: 67px;
+    bottom: -175px; 
 }
+
+
 
 h2{
     text-align: center;
@@ -71,6 +78,7 @@ h2{
 
 #gallery{
     margin-top: 80px;
+    
 }
 
 
@@ -113,11 +121,12 @@ h2{
     content: '';
     display: block;
     background: black;
-    height: 1px;
+    height: 2px;
     width: 20px;
     margin-top: 10px;
     right: 0;
     position: absolute;
+    transition: .8s ease-in;
     
   }
 
@@ -126,26 +135,22 @@ h2{
 }
 
 .box-list a:hover:after{
-      width: 100%;
+    width: 100%;
+    opacity: 1;
 
   }
 
 footer{
     background-color: black;
-    height: 128px;
     width: 100%;
-    font-size: 17px;
-    display: flex;
+    height: 128px;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-
-
+    display: flex;
 }
 
-
 footer p{
-    position: absolute;
+    margin-top: 50px;
+    font-size: 17px;
     color: white;
-    width: 362px;
-    font-size: 16px;
 }
